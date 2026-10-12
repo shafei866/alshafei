@@ -1,0 +1,34 @@
+[
+  {
+    "id": "hospitality",
+    "slug": "hospitality",
+    "name": "قطع التقديم والضيافة",
+    "tagline": "صواني وحوامل حلويات وتمر فاخرة تليق باستقبال ضيوفك",
+    "cover": "assets/images/categories/serving.jpg",
+    "banner": "assets/images/categories/serving-banner.jpg"
+  },
+  {
+    "id": "lighting",
+    "slug": "lighting",
+    "name": "فوانيس وإضاءة",
+    "tagline": "إضاءات وفوانيس دافئة تمنح أمسيات رمضان هدوءاً مميزاً",
+    "cover": "assets/images/categories/lighting.jpg",
+    "banner": "assets/images/categories/lighting-banner.jpg"
+  },
+  {
+    "id": "storage",
+    "slug": "storage",
+    "name": "علب وحافظات الضيافة",
+    "tagline": "علب تمور وبرطمانات حلويات محكمة وأنيقة للمائدة",
+    "cover": "assets/images/categories/storage.jpg",
+    "banner": "assets/images/categories/storage-banner.jpg"
+  },
+  {
+    "id": "decor",
+    "slug": "decor",
+    "name": "ديكور ومفارش مائدة",
+    "tagline": "مفارش سفرة كتانية، علب مناديل، ولمسات ديكور تكمّل المظهر",
+    "cover": "assets/images/categories/decor.jpg",
+    "banner": "assets/images/categories/decor-banner.jpg"
+  }
+]

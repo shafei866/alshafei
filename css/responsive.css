@@ -1,0 +1,208 @@
+/* ===================================================
+   responsive.css — تجاوب مخصص للتابلت والموبايل
+   (Breakpoints: 1024px Laptop, 768px Tablet, 480px Mobile)
+=================================================== */
+
+/* ================== شاشات اللابتوب والتابلت العريض (<= 1024px) ================== */
+@media (max-width: 1024px) {
+  .cat-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  /* شبكة المنتجات: 3 أعمدة متناسقة بالتسلسل */
+  .masonry {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+
+  .modal-drawer {
+    max-width: 720px;
+  }
+
+  .modal-body {
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+    gap: 18px;
+    padding: 20px;
+  }
+
+  .modal-main-shot {
+    height: 280px;
+  }
+}
+
+/* ================== شاشات التابلت الصغير والموبايل العريض (<= 768px) ================== */
+@media (max-width: 768px) {
+  .wrap {
+    padding: 0 16px;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .header-nav {
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 250px;
+    height: calc(100vh - 60px);
+    background: var(--ivory);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 20px;
+    gap: 18px;
+    box-shadow: -4px 0 20px rgba(0,0,0,0.08);
+    border-right: 1px solid var(--hairline);
+    transition: right 0.3s var(--ease);
+    z-index: 99;
+  }
+
+  .header-nav.is-open {
+    right: 0;
+  }
+
+  .header-nav a {
+    font-size: 1.05rem;
+    width: 100%;
+    padding-bottom: 6px;
+  }
+
+  .hero {
+    height: 72vh;
+    min-height: 440px;
+    border-radius: 0 0 24px 24px;
+  }
+
+  .hero-btn-group {
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .btn-gold, .btn-outline-white {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section {
+    padding: 50px 0;
+  }
+
+  /* شبكة المنتجات: عمودان متساويان ومريحان للعرض على الهاتف */
+  .masonry {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .product-card figure {
+    padding: 12px;
+  }
+
+  .product-card-body {
+    padding: 12px 10px 16px;
+  }
+
+  .product-card-body h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  /* تحويل المودال إلى دروة منزلقة من الأسفل تناسب راحة اليد */
+  .modal-overlay {
+    padding: 0;
+    align-items: flex-end;
+  }
+
+  .modal-drawer {
+    max-width: 100%;
+    max-height: 88vh;
+    border-radius: 24px 24px 0 0;
+    transform: translateY(100%);
+  }
+
+  .modal-overlay.is-open .modal-drawer {
+    transform: translateY(0);
+  }
+
+  .modal-handle {
+    display: flex;
+  }
+
+  .modal-body {
+    grid-template-columns: minmax(0,1fr);
+    padding: 14px 16px 24px;
+    gap: 14px;
+  }
+
+  .modal-main-shot {
+    height: 230px;
+  }
+
+  .footer-grid {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .footer-links {
+    gap: 36px;
+  }
+}
+
+/* ================== شاشات الموبايل الصغيرة (<= 480px) ================== */
+@media (max-width: 480px) {
+  .cat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cat-card {
+    aspect-ratio: 16/11;
+  }
+
+  /* الحفاظ على عمودين حتى في أصغر الشاشات: عمودان × صفين = 4 منتجات ظاهرة */
+  .masonry {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .product-card figure {
+    padding: 8px;
+  }
+
+  .product-card-body {
+    padding: 10px 8px 14px;
+  }
+
+  .product-card-body h3 {
+    font-size: 0.92rem;
+    margin-bottom: 6px;
+  }
+
+  .product-tag {
+    font-size: 0.66rem;
+    padding: 2px 9px;
+  }
+
+  .explore-btn {
+    font-size: 0.8rem;
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+  }
+
+  .cat-banner {
+    height: 240px;
+    min-height: 240px;
+  }
+
+  .cat-banner-content h1 {
+    font-size: 1.9rem;
+  }
+
+  .modal-main-shot {
+    height: 200px;
+  }
+}

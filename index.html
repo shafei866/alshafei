@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الشافعي | تشكيلة الضيافة الرمضانية</title>
+<meta name="description" content="معرض بوهيمي دافئ لقطع الضيافة والإضاءة وديكور مائدة رمضان">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-wrap">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 48 48" fill="none">
+        <path d="M24 4C13 8 8 17 12 27c3.6 8.7 13 13 21 10.4C24.6 41 18 33.6 18 24S24.6 7 33 6.6C29.2 4.6 26.6 3.6 24 4Z" fill="currentColor"/>
+        <circle cx="36" cy="12" r="2.2" fill="currentColor"/>
+      </svg>
+      <span>
+        <span class="brand-name">الشافعي</span>
+        <span class="brand-sub">RAMADAN COLLECTION</span>
+      </span>
+    </a>
+    <nav class="header-nav" id="mainNav">
+      <a href="index.html#categories">التصنيفات</a>
+      <a href="index.html#story">عن المجموعة</a>
+      <a href="#footer">تواصل معنا</a>
+    </nav>
+    <button class="mobile-toggle" id="menuToggle" aria-label="فتح القائمة">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- الهيرو سلايدر المتحرك التلقائي بالصور والكلام المتدرج -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow anim-stagger-1"><span class="rule"></span> شهر الجود والضيافة <span class="rule"></span></div>
+    <h1 class="hero-title anim-stagger-2">ضيافة رمضانية<br>تُروى بتفاصيلها</h1>
+    <p class="hero-subtitle anim-stagger-3">تشكيلة مختارة بعناية تجمع بين الإنتاج الخاص لقطعنا ونخبة منتقاة من أجمل أواني ومفارش الضيافة، لتجهيز بيتك لأدفأ اللحظات.</p>
+    <div class="hero-btn-group anim-stagger-4">
+      <a href="#categories" class="btn-gold">
+        استكشفي التصنيفات
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M5 12l6-6M5 12l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="hero-dots" id="heroDots"></div>
+</section>
+
+<section class="section" id="categories">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="crescent" aria-hidden="true">
+        <svg width="30" height="30" viewBox="0 0 48 48" fill="none"><path d="M24 4C13 8 8 17 12 27c3.6 8.7 13 13 21 10.4C24.6 41 18 33.6 18 24S24.6 7 33 6.6C29.2 4.6 26.6 3.6 24 4Z" fill="currentColor"/></svg>
+      </span>
+      <h2>تصفّحي حسب التصنيف</h2>
+      <p>اضغطي على أي تصنيف لاستعراض القطع المتوفرة فيه ومعرفة مقاساتها ومواصفاتها بدقة.</p>
+    </div>
+    <div class="cat-grid" id="catGrid">
+      <!-- كروت التصنيفات تُبنى ديناميكياً من categories.json -->
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="story">
+  <div class="wrap story-wrap">
+    <span class="crescent" aria-hidden="true">
+      <svg width="28" height="28" viewBox="0 0 48 48" fill="none"><path d="M24 4C13 8 8 17 12 27c3.6 8.7 13 13 21 10.4C24.6 41 18 33.6 18 24S24.6 7 33 6.6C29.2 4.6 26.6 3.6 24 4Z" fill="currentColor"/></svg>
+    </span>
+    <h2>بساطة ودفء يليق بالشهر الفضيل</h2>
+    <p>في "الشافعي"، نؤمن أن أناقة البيت في رمضان لا تحتاج تكلفاً، بل تكمن في تناغم التفاصيل. جمعنا في هذه المجموعة تشكيلة تجمع بين منتجاتنا الخاصة المصممة خصيصاً للمائدة، وقطع أخرى تم استيرادها بجودة عالية لنقدم لكِ خيارات عملية وجمالية تعيش معك طويلاً.</p>
+  </div>
+</section>
+
+<footer class="site-footer" id="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>الشافعي</h3>
+        <p>معرض رقمي لقطع الضيافة والديكور، مُصمم لإلهامك في تحضير أجمل أجواء رمضان في بيتك.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>التصنيفات</h4>
+          <ul id="footerCats"></ul>
+        </div>
+        <div>
+          <h4>صفحات سريعة</h4>
+          <ul>
+            <li><a href="index.html#categories">جميع الأقسام</a></li>
+            <li><a href="index.html#story">عن المجموعة</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>تواصل معنا</h4>
+          <ul>
+            <li><a href="tel:01111659995" dir="ltr">01111659995</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© ٢٠٢٦ الشافعي — جميع الحقوق محفوظة</div>
+  </div>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
